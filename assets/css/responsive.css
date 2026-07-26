@@ -1,0 +1,433 @@
+/* RESPONSIVE CSS */
+
+/* DESKTOP */
+@media (max-width: 1200px) {
+    .review-card {
+        width: 320px;
+    }
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: calc(100% + 15px);
+        left: 50%;
+        width: 90%;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: var(--shadow);
+
+        background: var(--white);
+
+        opacity: 0;
+        visibility: hidden;
+        
+        transform: translateX(-50%);
+        transition:.3s ease;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    
+    .nav-container {
+        padding: 0 25px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    /* HERO RESPONSIVE */
+    .hero {
+        padding: 125px 0;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    /* DESTINATION RESPONSIVE */
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-content {
+        order: 2;
+    }
+
+    .destination-map {
+        order: 1;
+
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .destination-stats {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* THINGS TO DO RESPONSIVE */
+    .things-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* GALLERY RESPONSIVE */
+    .gallery {
+        padding: 80px 0;
+    }
+
+    .gallery .section-title h2 {
+        font-size: 2.4rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 240px;
+    }
+
+    .gallery-item.wide {
+        grid-column: span 1;
+    }
+
+    .gallery-item.tall {
+        grid-row: span 1;
+    }
+
+    /* VISITORS RESPONSIVE */
+    .reviews {
+        padding: 80px 0;
+    }
+
+    .reviews h2 {
+        font-size: 2.2rem;
+    }
+
+    .rating-summary {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .review-card {
+        width: 300px;
+    }
+
+    /* CONTACT RESPONSIVE */
+    .contact {
+        padding: 80px 0;
+    }
+
+    .contact-card {
+        padding: 60px 50px;
+    }
+
+    .contact-content h2 {
+        font-size: 2.7rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    
+    /* HERO RESPONSIVE */
+    .hero {
+        padding: 100px 0;
+    }
+    
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: .95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    /* HERO SEARCH RESPONSIVE */
+    .hero-search {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        margin-top: 50px;
+    }
+
+    .search-divider {
+        display: none;
+    }
+
+    .search-item {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    /* DESTINATION RESPONSIVE */
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .destination-card img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .destination-map {
+        scale:1;
+        top: 0;
+    }
+
+    /* DESTINATIONS STATS RESPONSIVE */
+    .destination-stats {
+        grid-template-columns: 1fr;
+    }
+
+    /* THINGS TO DO RESPONSIVE */
+    .things {
+        padding: 80px 0;
+    }
+
+    .things-heading h2 {
+        font-size: 2rem;
+    }
+
+    .things-heading p {
+        font-size: 1rem;
+    }
+
+    .things-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* GALLERY RESPONSIVE */
+    .gallery {
+        padding: 60px 0;
+    }
+
+    .gallery .section-title{
+        margin-bottom: 50px;
+    }
+
+    .gallery .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .gallery .section-title p {
+        font-size: .85rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 260px;
+
+        gap: 16px;
+    }
+
+    .gallery-item.wide {
+        grid-column: span 1;
+    }
+
+    .gallery-item.tall {
+        grid-row: span 1;
+    }
+
+    .gallery-overlay {
+        padding: 20px;
+    }
+
+    .gallery-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .gallery-info span {
+        font-size: .85rem;
+    }
+
+    .gallery-button {
+        margin-top: 40px;
+    }
+
+    .reviews {
+        padding: 60px 0;
+    }
+
+    .reviews h2 {
+        font-size: 1.8rem;
+    }
+
+    .reviews .section-title {
+        margin-bottom: 40px;
+    }
+
+    .review-card {
+        width: 270px;
+        padding: 22px;
+    }
+
+    .review-user img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* CONTACT RESPONSIVE */
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact-card {
+        padding: 45px 30px;
+        border-radius: 25px;
+    }
+
+    .contact-content h2{
+        font-size: 2.2rem;
+    }
+
+    .contact-content p {
+        font-size: .85rem;
+        line-height: 1.8;
+    }
+
+    .contact-buttons {
+        gap: 15px;
+    }
+
+    /* FOOTER RESPONSIVE */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:576px){
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+    .footer-bottom{
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+    .footer-bottom-links{
+
+        justify-content:center;
+
+    }
+
+}
+
+/* MOBILE SMALL */
+@media (max-width: 480px) {
+    /* HERO RESPONSIVE */
+    .hero h1{
+        font-size: 2.3rem;
+    }
+
+    .hero-badge {
+        font-size: .8rem;
+        padding: 10px 18px;
+    }
+
+    /* GALLERY RESPONSIVE */
+    .gallery {
+        padding: 50px 0;
+    }
+
+    .gallery .section-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .gallery-grid {
+        grid-auto-rows: 220px;
+    }
+
+    .gallery-overlay {
+        padding: 16px;
+    }
+
+    .gallery-info h3 {
+        font-size: 1rem;
+    }
+
+    /* VISITORS RESPONSIVE */
+    .review-card {
+        width: 240px;
+    }
+
+    .reviews h2{
+        font-size: 1.5rem;
+    }
+
+    /* CONTACT RESPONSIVE */
+    .contact-card {
+        padding: 40px 25px;
+        border-radius: 22px;
+    }
+
+    .contact-content h2 {
+        font-size: 2rem;
+    }
+
+    .contact-content p {
+        font-size: .75rem;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-buttons .btn {
+        width: 100%;
+    }
+}
