@@ -1,0 +1,57 @@
+:root {
+    --bg: #F5F8F2;               /* pale sea-mist */
+    --bg-alt: #EDF2E9;           /* slightly deeper mist, for banded sections */
+    --surface: #FFFFFF;          /* card surface */
+    --surface-warm: #FFFEFA;     /* warm-white variant, used sparingly */
+
+    --ink: #16241D;              /* volcanic ink (headings, body text) */
+    --ink-soft: #55645A;         /* muted sage-gray (secondary text) */
+    --ink-faint: #8B968C;        /* tertiary / captions */
+
+    --ocean: #0E6E5C;            /* deep teal — primary accent */
+    --ocean-dark: #0A4F42;       /* hover / pressed state */
+    --ocean-tint: #E4F0EA;       /* pale teal wash for badges/backgrounds */
+
+    --coral: #E8637C;            /* Pantai Pink accent — signature pop */
+    --coral-dark: #C94964;
+
+    --gold: #D9A441;             /* temple-gold — stars, highlights */
+
+    --line: #DBE3D3;             /* hairline border on --bg */
+    --line-on-surface: #E6E9E1;
+
+    /* ===== COLOR ===== */
+    --primary-color: #00A352;
+    --primary-dark-color: #007A2E;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+
+    --white: #ffffff;
+    --black: #000000;
+    --gray : #666;
+
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+
+    --text: #0F172A;
+    --text-green: #16a34a;
+    --text-light-color: #64748B;
+    --text-color-dark: #0F172A;
+
+    --bg-white: #f8fbff;
+
+    --card: #ddd;
+
+    /* ===== SHADOW ===== */
+    --shadow: 0 12px 35px rgba(15,23,42,0.1);
+
+    --shadow-basic : 0 10px 35px rgba(0,0,0,.06);
+    --shadow-hover : 0 20px 45px rgba(0,0,0,.12);
+
+    /* ===== TYPE ===== */
+    --font-display: 'Fraunces', serif;
+    --font-body: 'Inter', sans-serif;
+}
