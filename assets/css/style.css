@@ -230,6 +230,8 @@ body {
     border-radius: 999px;
     cursor: pointer;
 
+    text-weight: 700;
+
     transition: .3s ease;
 }
 
@@ -245,6 +247,8 @@ body {
     padding: 15px 34px;
     border-radius: 999px;
     cursor: pointer;
+
+    text-weight: 700;
 
     transition: .3s ease;
 }
